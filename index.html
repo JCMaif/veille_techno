@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Sécurité en développement</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Bonnes pratiques pour le développement d'une application web</h2>
+          <ul>
+            <li>Recommandations de l'ANSSI</li>
+            <li>Importance de la sécurité des applications web</li>
+            <li>ANSSI : Rôle et missions</li>
+          </ul>
+          <img src="./ressources/01.PNG" height="150" />
+        </section>
+        <section>
+          <h2>Authentification et identification</h2>
+          <ul>
+            <li>Mot de passe fort et unique</li>
+            <li>Authentification multifacteur (MFA)</li>
+            <li>Stockage sécurisé des mots de passe</li>
+          </ul>
+          <img src="./ressources/02.PNG" height="300" />
+        </section>
+        <section>
+          <h2>Protection contre les attaques par force brute</h2>
+
+          <ul>
+            <li>Limite du nombre de tentatives de connexion</li>
+            <li>Captcha</li>
+          </ul>
+          <img src="ressources/03.PNG" height="300" />
+        </section>
+        <section>
+          <h2>Vulnérabilités et injections</h2>
+
+          <ul>
+            <li>Cross-Site Scripting (XSS)</li>
+            <li>SQL Injection (SQLi)</li>
+            <li>Cross-Site Request Forgery (CSRF)</li>
+          </ul>
+          <img src="ressources/04.PNG" height="300" />
+        </section>
+        <section>
+          <h2>Chiffrement et confidentialité</h2>
+
+          <ul>
+            <li>
+              Mise en place du chiffrement HTTPS pour l'ensemble du site web
+            </li>
+            <li>Chiffrement des données sensibles stockées</li>
+            <li>Limitation de la collecte de données personnelles</li>
+            <li>Respect du RGPD</li>
+          </ul>
+          <img src="ressources/05.PNG" height="300" />
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
